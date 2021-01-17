@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESTO API</title>
+  <link  rel="stylesheet" href="../src/assets/css/T-grid.scss" />
+  <link rel="stylesheet" href="../src/assets/css/T-margin-padding.scss" />
+  <link rel="stylesheet" href="../src/assets/css/main.scss" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=KEY_API&libraries=places"></script>
+  <script src="https://kit.fontawesome.com/407307e39b.js" crossorigin="anonymous" defer></script>
+  <script>
+
+  </script>
+</head>
+
+<body class="grid-fuild-5fr " style="width: 100vw">
+  <div id="map" class="w100 h100 cl1-1 rw1" style="height: 100vh"></div>
+  <div id="list" class="cl1-1 rw1 w25 h100 layer2 xend"></div>
+  <div class="formAvis cl1-1 rw1 w25 h100 layer2 xend grid-fuild-5">
+    <div class="arrowBAck cl1-1 rw1 yctr xstrt">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="nameRestorant cl1-1 rw1 yctr xctr">
+      <p>
+        <span class="resto">Restaurant</span> <br /><span class="insertValue"></span><br /><span
+          class="nouvelleAvis">Nouvelle Avis</span>
+      </p>
+    </div>
+    <form action="" class="w80 cl1-1 rw1-2 xctr yctr grid-fuild-5">
+      <input class="cl1-1 rw1 check" type="text" name="author" id="author" placeholder=" nom" required />
+      <input class="cl1-1 rw2 check" type="text" id="rank" placeholder="Note 1-5" title="Nombre entre 0 et 5" required
+        pattern="[0-5]{1}" />
+      <textarea class="cl1-1 rw3 check" name="comment" id="comment" cols="30" rows="5" required
+        placeholder="Partagez votre expérience"></textarea>
+      <input class="cl1-1 rw4" type="submit" id="bouton" value="Send"  />
+    </form>
+  </div>
+  <div class="reviewAdd">
+    <p>Succés</p>
+  </div>
+  <div class="box__filter cl3-2 rw1-1 xend w50  grid-5frx5fr">
+    <span class="cl4 rw1 yctr xctr w50 xctr rangeStar grid-1x1 layer3">
+      <i style="color: gold;" class="fas fa-xs fa-star  cl1-1 rw1-1 xctr yctr rangeStar2"
+        title="filter par nombre d'étoiles"></i>
+    </span>
+    <div class="cl1-4 rw1 yctr xctr w100 h50 box__RangeStar grid-1x1">
+      <div class="yctr xstrt w60 h15" id="slider"></div>
+    </div>
+    <span class="cl4 rw2 ystrt xctr w50  addResto grid-1x1 layer3">
+      <i class="fas fa-xs fa-map-marker-alt cl1-1 rw1-1 xctr yctr" title="Ajouter un restaurant"></i>
+    </span>
+    <div class="cl1-4 rw1-2 yctr xctr w100 h50 box__AddResto grid-1x1">
+      <p class="tiltle__addResto">Nouveau Restaurant</p>
+      <div id="locationField" class="cl1-1 rw1-1 layer4 xctr yctr">
+        <input id="autocomplete" placeholder="Enter une adresse" type="text" />
+      </div>
+      <!--<input type="button" class="confirmation cl1-1 rw1-1 yend" value="Confirmer" disabled />-->
+    </div>
+  </div>
+  <div class="formAddResto cl1-1 rw1-1 w100 h100  grid-5frx5fr">
+    <div class="pageFormAddResto cl1-1 rw1-1 xctr yctr grid-5frx5fr">
+      <div class="arrowBAckAddResto cl1-1 rw1 yctr xend grid-1x1">
+        <i class="fas fa-times cl1-1 rw1-1 xctr yctr"></i>
+      </div>
+
+      <form action="" id="formToSubmit" class="w80 cl1-1 rw1-1 xctr yctr grid-fuild-5">
+        <div class="cl1-1 rw1 grid-fuild-1  box__adress">
+          <img src="./assets/img/markerAdd.svg" class=" w5 cl1 rw1 xctr yctr" alt="">
+          <p class="adressRestaurant cl1 rw2 xctr yctr">coordonné du marker <br> <span class="injectAdress"></span> </p>
+        </div>
+
+
+        <input class="cl1-1 rw2 valueToClear" type="text" name="nomResto" id="nomResto" placeholder="nom du restaurant"
+          required />
+        <input class="cl1-1 rw3 valueToClear" type="text" name="Telephone" id="Telephone" pattern="[0-9]{10}"
+          placeholder="Numéro de télphone valueToClear" title="numéro à 10 chiffres" />
+        <input class="cl1-1 rw4 valueToClear" type="text" name="Website" id="Website" placeholder="Website" />
+        <div class="cl1-1 rw5 xctr yctr ligne"></div>
+        <input class="cl1-1 rw6 valueToClear " type="text" name="author" id="authorAddResto" placeholder=" nom"
+          required />
+        <input class="cl1-1 rw7 valueToClear " type="text" id="rankAddResto" placeholder="Note 1-5"
+          title="Nombre entre 0 et 5" required pattern="[0-5]{1}" />
+        <textarea class="cl1-1 rw8 valueToClear" name="comment" id="commentAddResto" cols="30" rows="5" required
+          placeholder="Partagez votre expérience"></textarea>
+        <button class="cl1-1 rw9"  id="boutonAddResto" >Send</button>
+      </form>
+
+    </div>
+  </div>
+
+
+</body>
+
+
+<script src=" ./js/main.js" type="module"></script>
+
+</html>

@@ -1,0 +1,16 @@
+Js/node_modules
+Js/dist
+Js/.cache
+Js/netlify.toml
+Js/package-lock.json
+
+React/node_modules
+React/netlify.toml
+React/package-lock.json
+React/.eslintcache
+React/build
+
+Vue/node_modules
+Vue/netlify.toml
+Vue/package-lock.json
+Vue/dist

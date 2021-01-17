@@ -1,0 +1,51 @@
+[{
+        "geometry": {
+            "location": {
+                "lat": 48.8865035,
+                "lng": 2.3442197
+            }
+        },
+        "name": "Babalou",
+        "rating": 4,
+        "reviews": [{
+                "author_name": "raoul",
+                "rating": 5,
+                "text": "Une minuscule pizzeria délicieuse cachée juste à côté du Sacré choeur !"
+            },
+            {
+                "author_name": "Duke",
+                "rating": 3,
+                "text": "J'ai trouvé ça correct, sans plus"
+            }
+        ],
+        "adr_address": "4 Rue Lamarck, 75018 Paris",
+        "formatted_phone_number": "undefined",
+        "website": "undefined"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 48.8737815,
+                "lng": 2.3501649
+            }
+        },
+        "name": "Bronco",
+        "rating": 4.5,
+
+        "reviews": [{
+                "author_name": "Franck",
+                "rating": 4,
+                "text": "Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
+            },
+            {
+                "author_name": "Charlie",
+                "rating": 5,
+                "text": "Tout simplement mon restaurant préféré !"
+            }
+        ],
+        "adr_address": "39 Rue des Petites Écuries, 75010 Paris",
+        "formatted_phone_number": "undefined",
+        "website": "undefined"
+    }
+
+]
